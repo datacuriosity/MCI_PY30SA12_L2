@@ -9,4 +9,4 @@ model.fit(df.iloc[:, :-1], df.price)
 
 prediction = model.predict(df.iloc[:, :-1])
 df_compared = pd.DataFrame({'actual': df.price, 'prediction': prediction})
-df_compared
+print(df_compared)
